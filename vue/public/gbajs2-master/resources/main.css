@@ -1,0 +1,227 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	color: white;
+	font-family: 'superPlumbers';
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column; 
+	background-image:linear-gradient(to right, #FFD733,#633311);
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+	background-attachment: fixed;
+ }
+	/* linear-gradient(to bottom, #FFFFFF, #1A1A1A); */
+	/* background: linear-gradient(to bottom, #9D9D9D, #0F380F); */
+	/* background: linear-gradient(to bottom, #006400, #FFD700); */
+	/* background: linear-gradient(to bottom, #FFD733, #74421D); */
+	/* background: linear-gradient(to bottom, #FF3C28, #0AB9E6); */
+	/* background: linear-gradient(to bottom, #B69564, #3B2721); */
+	/* background: linear-gradient(to bottom, #B69564, #3B2721); */
+	/* background: linear-gradient(to bottom, #009BDA, #FF2052); */
+	/* background: linear-gradient(to bottom, #FFFFFF, #1A1A1A); */
+	/* background: linear-gradient(to bottom, #A8E6CE, #DCE9F7); */
+	/* background: linear-gradient(to bottom, #BBDEFB, #1976D2); */
+	/* background: linear-gradient(to bottom, #FF4B82, #29ABE2); */
+#nintendoLogo{
+	padding:0%;
+	margin: 0%;
+	position: relative;
+	top: -550;
+	right: 320%;
+	height: min-content;
+	opacity: 70%;
+	z-index: 1;
+	color: linear-gradient(to bottom, #FFFFFF, #1A1A1A);;
+	
+}
+div.control-buttons{
+	position: relative; /* or absolute, fixed, sticky */
+    right: -300px;
+	bottom: 90px;
+	background-position-x: -400px;
+}
+
+#preload {
+	display: flex;
+    flex-wrap: wrap; 
+	max-height: 30px;
+    gap: 10px;
+}
+
+
+
+.GBA-container {
+	padding: 100px;
+    position: relative;
+    /* background: linear-gradient(#B2E0EA,#B2E0EA,#A0D1F9,#FD74A4,#6D6D9B,#6D6D9B); */
+	width: 650px;
+    height: 550px;
+    border-radius: 40px;
+	padding-top: 100px;
+	z-index: 5;
+}
+
+#logo {
+	position: absolute;
+	top: 73%;
+	right: 34%;
+    max-width: 250px;
+}
+
+#screen {
+	position: absolute;
+    top: calc(50% - 30px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+	z-index: 3;
+	border-color: black;
+	border: 2px;
+}
+
+#controls, #instructions {
+	display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+	opacity: 1;
+	transition: opacity ease-out 0.6s;
+	font-family: 'superPlumbers';
+}
+
+#controls button, #mapping td, #sound, #controls label {
+	font-family: 'superPlumbers';
+	display: flex;
+    gap: 10px;
+	background: black;
+	border: 0px solid black;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	border-radius: 30px;
+	color: white;
+	font-weight: bold;
+	padding: 6px 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+#controls .bigbutton {
+	display: flex;
+	flex-wrap: nowrap;
+	font-size: 30px;
+	padding: 8px 25px;
+	font-family: 'superPlumbers';
+	justify-content: center; /* Horizontal centering */
+    align-items: center;
+}
+
+#moreinfo {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 0px;
+	bottom: 0px;
+	overflow: hidden;
+	padding: 10px 15px;
+	transition: width ease-out 0.5s, padding ease-out 0.5s;
+	z-index: 15;
+	font-family: 'superPlumbers';
+}
+
+#moreinfo:hover {
+	width: 500px;
+	padding: 10px 10px;
+}
+
+h1 {
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+footer {
+	font-size: 12px;
+	padding-top: 8px;
+}
+
+p {
+	margin-top: 0px;
+}
+
+#controls, #preload, #ingame {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+	max-height: 100px;
+    gap: 5px;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;    /* Vertical centering */
+
+}
+
+.control-buttons button {
+    background-color: #2e7d32; 
+    color: white;
+	gap: 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    justify-content: center; /* Horizontal centering */
+    align-items: center;    /* Vertical centering */
+}
+
+.bigbutton {
+	display: flex;
+    flex-wrap: nowrap;
+    font-size: 20px;
+	justify-content: center; /* Horizontal centering */
+    align-items: center;
+    
+}
+
+#pixelated, #sound p {
+	display: flex;
+    flex-wrap: nowrap;
+    margin-right: 5px;
+	justify-content: center; /* Horizontal centering */
+    align-items: center;
+}
+
+#sound {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.hiddenFileInput {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.fallingCharacter {
+    display: inline-block;
+    position: absolute;
+    font-size: 72px;
+    font-family: 'marioluigi';
+}
+@font-face {
+    font-family: "marioluigi"; /* You can name it whatever you like */
+    src: url('MarioAndLuigi.ttf') format('truetype');
+	font-weight: bold;
+}
+@font-face {
+    font-family: 'dingBat'; /* You can name it whatever you like */
+    src: url('nintendoDingBats.ttf') format('truetype'), sans-serif;/* If you have multiple formats, list them all */
+}
+@font-face {
+    font-family: 'superPlumbers'; /* You can name it whatever you like */
+    src: url('SuperPlumberBrothers.ttf') format('truetype'), sans-serif;/* If you have multiple formats, list them all */
+}
+
